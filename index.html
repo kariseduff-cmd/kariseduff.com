@@ -1465,9 +1465,9 @@
             <span class="contact-link-icon">in</span>
             linkedin.com/in/kariseduff
           </a>
-          <a href="mailto:info@kariseduff.com" class="contact-link">
+          <a href="/cdn-cgi/l/email-protection#8ee7e0e8e1cee5effce7fdebeafbe8e8a0ede1e3" class="contact-link">
             <span class="contact-link-icon">✉</span>
-            info@kariseduff.com
+            <span class="__cf_email__" data-cfemail="bcd5d2dad3fcd7ddced5cfd9d8c9dada92dfd3d1">[email&#160;protected]</span>
           </a>
         </div>
       </div>
@@ -1514,11 +1514,12 @@
     <div class="footer-links">
       <a href="https://linkedin.com/in/kariseduff" target="_blank">LinkedIn</a>
       <a href="https://github.com/kariseduff" target="_blank">GitHub</a>
-      <a href="mailto:info@kariseduff.com">Email</a>
+      <a href="/cdn-cgi/l/email-protection#6d04030b022d060c1f041e0809180b0b430e0200">Email</a>
     </div>
   </footer>
 
 
+  <script>
     window.addEventListener('scroll', () => {
       const nav = document.querySelector('nav');
       nav.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(26,107,90,0.1)' : 'none';
@@ -1539,3 +1540,16 @@
         if (res.ok) {
           btn.textContent = '✓ Message Sent';
           btn.style.background = 'var(--emerald)';
+          form.reset();
+        } else {
+          btn.textContent = 'Try Again';
+          btn.style.background = '#c0392b';
+        }
+      } catch {
+        btn.textContent = 'Try Again';
+        btn.style.background = '#c0392b';
+      }
+    });
+  </script>
+</body>
+</html>
